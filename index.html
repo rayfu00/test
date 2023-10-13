@@ -1,84 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  body {
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #161616;
-  }
-
-  .container {
-    perspective: 800px;
-  }
-
-  .ring {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: 4px solid #4CAF50;
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: rotate 3s linear infinite;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masterpiece Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-    100% {
-      transform: rotateX(35deg) rotateY(45deg) rotateZ(360deg);
-    }
-  }
 
-  .planet {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: #FF5722;
-    border-radius: 50%;
-    animation: orbit 3s linear infinite;
-  }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
 
-  @keyframes orbit {
-    0% {
-      transform: translateX(100px) translateY(0) rotate(0deg);
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      background: linear-gradient(45deg, #FFC312, #EE5A24);
+      color: #fff;
+      text-align: center;
+      font-size: 2em;
     }
-    100% {
-      transform: translateX(100px) translateY(0) rotate(360deg);
-    }
-  }
 
-  .moon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #607D8B;
-    border-radius: 50%;
-    animation: moon-orbit 1.5s linear infinite;
-  }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 50px;
+    }
 
-  @keyframes moon-orbit {
-    0% {
-      transform: translateX(50px) translateY(0) rotate(0deg);
+    .feature {
+      text-align: center;
     }
-    100% {
-      transform: translateX(50px) translateY(0) rotate(360deg);
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
     }
-  }
-</style>
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+    }
+
+    .testimonial {
+      background-color: #f9f9f9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Masterpiece Website</h1>
+  </header>
 
-<div class="container">
-  <div class="ring"></div>
-  <div class="planet"></div>
-  <div class="moon"></div>
-</div>
+  <section class="hero">
+    <h2>Welcome to the Future</h2>
+  </section>
 
+  <section class="features">
+    <div class="feature">
+      <h3>Efficient</h3>
+      <p>Maximize your productivity with our efficient tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Intuitive</h3>
+      <p>Our platform is designed to be intuitive and easy to use.</p>
+    </div>
+    <div class="feature">
+      <h3>Innovative</h3>
+      <p>Experience the latest innovations in technology with us.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+  </section>
+
+  <section class="testimonial">
+    <h3>Testimonials</h3>
+    <p>"This website has truly changed the way I work. It's amazing!" - John Doe</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Masterpiece Website</p>
+  </footer>
 </body>
 </html>
